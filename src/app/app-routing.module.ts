@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'write-nugget',
+    loadChildren: () => import('./write-nugget/write-nugget.module').then( m => m.WriteNuggetPageModule)
+  },
 ];
 
 @NgModule({

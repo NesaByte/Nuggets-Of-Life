@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { StorageService } from '../storage.service';
+import { NuggetsModel } from '../nuggets.models'
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit{
 
-  constructor() {}
+  NuggetsModel:NuggetsModel[];
+
+   constructor(private storage: StorageService) { }
+
+ 
+  ngOnInit() {
+    this.NuggetsModel = this.storage.getAllNuggets();
+  }
+/*
+  ionViewWillEnter() {
+    this.NuggetsModel = this.storage.getAllNuggets();
+  } */
+
 
 }

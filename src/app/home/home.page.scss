@@ -1,3 +1,11 @@
+ion-content{
+  --padding-bottom: 10px;
+  --padding-end: 25px;
+  --padding-start: 25px;
+  --padding-top: 20px;
+  --background: url(../../assets/bg-nol.png) 0 0/100% 100% no-repeat;
+}
+
 #container {
   text-align: center;
 
@@ -5,8 +13,11 @@
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); 
+
 }
+
+
 
 #container strong {
   font-size: 20px;
