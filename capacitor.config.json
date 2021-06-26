@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "nuggetsoflife",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

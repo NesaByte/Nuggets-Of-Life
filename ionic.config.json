@@ -1,0 +1,7 @@
+{
+  "name": "nuggetsoflife",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
