@@ -21,6 +21,19 @@ export class StorageService {
     this._storage = storage;
   }
 
+  public saveNewNugget(key: any, t:string, d:string){
+    var newNugget = new NuggetsModel(key, t, d);
+    this._storage?.set(key, newNugget);
+    this.logAllNuggets();
+  }
+
+  private logAllNuggets() {
+    console.log("all Nuggets");
+    this._storage.forEach((value, key, index) => {
+      console.log(key, value as NuggetsModel)
+    })
+  }
+
   public getAllNuggets() {
     var alltasks: NuggetsModel[] = [];
     if (this._storage != null) {
