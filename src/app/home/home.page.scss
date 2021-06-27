@@ -1,9 +1,7 @@
 ion-content{
   --padding-bottom: 10px;
-  --padding-end: 25px;
-  --padding-start: 25px;
   --padding-top: 20px;
-  --background: url(../../assets/bg-nol.png) 0 0/100% 100% no-repeat;
+  --background: url(../../assets/bg-nol2.png) 0 0/100% 100% no-repeat;
 }
 
 #container {
@@ -35,4 +33,28 @@ ion-content{
 
 #container a {
   text-decoration: none;
+}
+
+.myblock{ 
+  margin-top: 50%;  
+  height: 70%;
+  background-color: white; 
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+}
+
+.slide{
+  padding-left: 25px; 
+  padding-top: 0px; 
+  padding-right: 25px; 
+  padding-bottom: 0px; 
+}
+
+ion-item{
+  --padding-bottom: 0px;
+  --padding-top: 0px;
+}
+
+p{
+  margin: 0%;;
 }

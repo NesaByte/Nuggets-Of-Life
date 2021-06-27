@@ -44,6 +44,11 @@ export class StorageService {
     return alltasks;
   }
 
+  //delete existing account
+  public async deleteNugget(NuggetsModel: NuggetsModel) {
+    await this._storage.remove(NuggetsModel.dateTaken);
+  }
+
   public getStorageLength() { 
     return this._storage.length().then((val) => {
       console.log("Length " + val);
