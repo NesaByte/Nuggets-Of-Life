@@ -1,0 +1,16 @@
+ion-content{
+    --padding-bottom: 10px;
+    --padding-end: 25px;
+    --padding-start: 25px;
+    --padding-top: 20px;
+    --background: url(../../assets/bg-nol2.png) 0 0/100% 100% no-repeat;
+  }
+  
+  ion-toolbar {
+    /*--background: transparent no-repeat fixed center;
+    --color: #EAB536;
+    position: absolute;
+    top: 0;*/
+    --background: transparent;
+    --ion-color-base: transparent !important;
+  } 

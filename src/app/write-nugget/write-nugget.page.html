@@ -1,9 +1,40 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
-    <ion-title>writeNugget</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen>
+  <ion-grid style="padding-top: 40%;">
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          <p style="text-align: center; font-weight: bold; font-size: 24px; color: white;">Write a Nugget of your Life
+          </p>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input text-center
+          style="background-color: white; border-color: #EAB536; border-radius: 10px; color: #EAB536; margin-right: 20px;"
+          [(ngModel)]="input_t" placeholder="  Title" type="text"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input text-center
+          style="background-color: white; border-color: #EAB536; border-radius: 10px; color: #EAB536; margin-right: 20px; height: 100px;"
+          [(ngModel)]="input_d" placeholder="  Description" type="string"></ion-input>
+      </ion-col>
+    </ion-row> 
+    <ion-row>
+      <ion-col> 
+        <ion-fab-button horizontal="end" color="light" color="dark" [routerLink]="['/']">Save</ion-fab-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
