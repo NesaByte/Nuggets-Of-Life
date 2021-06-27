@@ -36,6 +36,8 @@ export class WriteNuggetPage implements OnInit {
       }).then(alert => {alert.present();}) 
     }else{
       this.storage.saveNewNugget(Date.now().toString(),input_t, input_d);
+      this.input_t = "";
+      this.input_d = "";
       this.router.navigate(['/']);
       this.alertController.create({
         header:'Done!',
